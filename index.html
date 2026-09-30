@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loja Simples</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h1>Loja Simples 🛍️</h1>
+    </header>
+
+    <main>
+        <!-- Formulário de Cadastro -->
+        <section class="form-container">
+            <h2>Cadastro de Produto</h2>
+            <form id="batata-form">
+                <div class="form-group">
+                    <label for="product-name">Nome do Produto:</label>
+                    <input type="text" id="product-name" required placeholder="Ex: Caderno">
+                </div>
+                <div class="form-group">
+                    <label for="product-price">Preço (R$):</label>
+                    <input type="number" id="product-price" step="0.01" required placeholder="0.00">
+                </div>
+                <div class="form-group">
+                    <label for="product-qty">Quantidade:</label>
+                    <input type="number" id="product-qty" required placeholder="Ex: 30">
+                </div>
+                <button type="submit" id="submit-btn">Adicionar produto</button>
+            </form>
+        </section>
+
+        <!-- Seção da Lista de Produtos -->
+        <section class="list-section" id="batata-list-container">
+            <h2>Produtos Cadastrados</h2>
+            <ul id="product-list">
+                <!-- Os itens vão aparecer aqui via JavaScript -->
+            </ul>
+        </section>
+    </main>
+
+    <!-- PARTE 1: O Footer solicitado pelo professor -->
+    <footer>
+        <p>&copy; 2026 - Atividade Loja Simples | Desenvolvido para a aula de Fundamentos Web</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
